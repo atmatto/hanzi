@@ -1,0 +1,10 @@
+Get a lot of sentences
+Tokenize them
+Build a word frequency list
+For each word find a sentence which suits the best
+It shouldn't contain any unknown words, but there should be some maximum allowed "lookahead"
+For the first N words, the lookahead should be higher (a pool of starting vocabulary)
+
+Maybe some reordering/skipping should be allowed when it produces a higher-quality result
+- Keep a list of words needed to make a word ready to add (unknown words which are in the wanted example sentence)
+- Do it with something akin to reference counting, to make it performant
